@@ -1,0 +1,9 @@
+package com.skslate;
+
+public interface Sim {
+	void calling();
+	void messaging();
+	void browse();
+	
+
+}

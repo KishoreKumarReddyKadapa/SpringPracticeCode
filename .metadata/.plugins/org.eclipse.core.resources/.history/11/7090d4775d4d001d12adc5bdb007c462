@@ -1,0 +1,20 @@
+package com.sk.dto;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+public class Airtel  {
+	private AirtelStore airtelStores;
+	
+	public Airtel(AirtelStore airtelStores) {
+		this.airtelStores = airtelStores;
+	}
+
+
+	public AirtelStore getAirtelStores() {
+		return airtelStores;
+	}
+	
+	
+
+}

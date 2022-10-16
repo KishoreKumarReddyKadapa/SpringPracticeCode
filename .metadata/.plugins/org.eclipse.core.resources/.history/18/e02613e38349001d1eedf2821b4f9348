@@ -1,0 +1,15 @@
+package com.skslate;
+
+public class LakshmiAirtelService {
+	private String area ;
+	private int noOfTowers;
+	private AirtelStore airtelStores;
+	public LakshmiAirtelService(String area, int noOfTowers, AirtelStore airtelStores) {
+		super();
+		this.area = area;
+		this.noOfTowers = noOfTowers;
+		this.airtelStores = airtelStores;
+	}
+
+	
+}

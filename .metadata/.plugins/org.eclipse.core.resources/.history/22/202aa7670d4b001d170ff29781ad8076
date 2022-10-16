@@ -1,0 +1,33 @@
+package com.skslate;
+
+public class AirtelStore {
+	private String storeArea;
+	private String buildingName;
+	private Integer pincode;
+	
+	public String getStoreArea() {
+		return storeArea;
+	}
+	public void setStoreArea(String storeArea) {
+		this.storeArea = storeArea;
+	}
+	public String getBuildingName() {
+		return buildingName;
+	}
+	public void setBuildingName(String buildingName) {
+		this.buildingName = buildingName;
+	}
+	public Integer getPincode() {
+		return pincode;
+	}
+	public void setPincode(Integer pincode) {
+		this.pincode = pincode;
+	}
+	@Override
+	public String toString() {
+		return "AirtelStore [storeArea=" + storeArea + ", buildingName=" + buildingName + ", pincode=" + pincode + "]";
+	}
+	
+	
+
+}

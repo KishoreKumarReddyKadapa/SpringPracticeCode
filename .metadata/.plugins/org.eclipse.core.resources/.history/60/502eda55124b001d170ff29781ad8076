@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.skslate.autowire.AirtelStore" id="airtelStores">
+		<property name="storeArea" value="Kukatpally"></property>
+		<property name="buildingName" value="Sri Sai Building"></property>
+		<property name="pincode" value="500090"></property>
+	</bean>
+	<!-- <bean class="com.skslate.autowire.AirtelStore" id="airtelStores1">
+		<property name="storeArea" value="Ameerpate"></property>
+		<property name="buildingName" value="Siva sai Building"></property>
+		<property name="pincode" value="512512"></property>
+	</bean> -->
+
+	<!-- setter injection -->
+	<bean class="com.skslate.autowire.Airtel" id="airtel" autowire="byType">
+		<property name="area" value="Hyderabad"></property>
+		<property name="noOfTowers" value="500"></property>
+		
+
+	</bean>
+
+</beans>

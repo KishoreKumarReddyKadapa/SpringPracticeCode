@@ -1,0 +1,17 @@
+package com.skslate.annotations;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+@Component
+public class Airtel  {
+	@Autowired
+	private AirtelStore airtelStores;
+	
+
+	public AirtelStore getAirtelStores() {
+		return airtelStores;
+	}
+	
+	
+
+}

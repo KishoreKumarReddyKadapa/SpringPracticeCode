@@ -1,0 +1,24 @@
+package com.skslate.autowire;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Airtel  {
+
+	private AirtelStore airtelStores;
+	
+	
+	@Autowired 
+	public Airtel(AirtelStore airtelStores) {
+		this.airtelStores = airtelStores;
+	}
+
+
+
+	public AirtelStore getAirtelStores() {
+		return airtelStores;
+	}
+	
+	
+
+}

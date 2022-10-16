@@ -1,0 +1,25 @@
+package com.skslate.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.sk.dto.Airtel;
+import com.skslate.annotations.AirtelStore;
+
+@Configuration
+@ComponentScan(basePackages = "com.skslate")
+public class AppConfig {
+
+	@Bean
+	public Airtel getAirtelObj() {  // method name is act as reference 
+		return new Airtel(getAirtelStoreObj());
+	}
+	
+
+	@Bean
+	public AirtelStore getAirtelStoreObj() {  // method name is act as reference 
+		return new AirtelStore();
+	}
+	
+}

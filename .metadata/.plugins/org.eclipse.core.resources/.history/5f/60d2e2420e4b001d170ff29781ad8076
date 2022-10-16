@@ -1,0 +1,31 @@
+package com.skslate.autowire;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Mobile {
+
+	public static void main(String[] args) {
+
+//		Airtel air = new Airtel();
+//		air.calling();
+//		air.messaging();
+//		air.browse();
+		
+		// Spring Container - IOC container
+		ApplicationContext ac = new ClassPathXmlApplicationContext("springbeans.xml");
+		
+//		Sim sim = (Sim)ac.getBean("airtel"); // id --> of xml file
+//		sim.calling();
+//		sim.messaging();
+//		sim.browse();
+		
+		Airtel air = (Airtel)ac.getBean("airtel"); // id --> of xml file
+		System.out.println("Area: "+air.getArea());
+		System.out.println("Number of towers : "+air.getNoOfTowers());
+		System.out.println("Store Area:: "+air.getAirtelStores().getStoreArea());
+
+		
+	}
+
+}

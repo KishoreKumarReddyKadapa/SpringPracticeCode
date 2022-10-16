@@ -1,0 +1,5 @@
+package com.skslate.annotations.store;
+
+public class AirtelStore {
+
+}

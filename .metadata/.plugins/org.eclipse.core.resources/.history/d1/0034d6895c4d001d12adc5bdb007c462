@@ -1,0 +1,17 @@
+package com.skslate.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.skslate.dto.Airtel;
+
+@Configuration
+@ComponentScan(basePackages = "com.skslate")
+public class AppConfig {
+
+	@Bean
+	public Airtel airtel() {
+		return new Airtel();
+	}
+}

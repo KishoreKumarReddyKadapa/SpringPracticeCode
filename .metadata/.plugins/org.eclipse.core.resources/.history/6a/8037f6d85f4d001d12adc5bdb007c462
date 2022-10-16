@@ -1,0 +1,19 @@
+package com.sk.dto;
+
+import com.skslate.annotations.AirtelStore;
+
+public class Airtel  {
+	private AirtelStore airtelStores;
+	
+	public Airtel(AirtelStore airtelStores) {
+		this.airtelStores = airtelStores;
+	}
+
+
+	public AirtelStore getAirtelStores() {
+		return airtelStores;
+	}
+	
+	
+
+}

@@ -1,0 +1,18 @@
+package com.skslate;
+
+public class Mobile {
+
+	public static void main(String[] args) {
+
+//		Airtel air = new Airtel();
+//		air.calling();
+//		air.messaging();
+//		air.browse();
+		
+		Jio jio = new Jio();
+		jio.calling();
+		jio.messaging();
+		jio.browse();
+	}
+
+}

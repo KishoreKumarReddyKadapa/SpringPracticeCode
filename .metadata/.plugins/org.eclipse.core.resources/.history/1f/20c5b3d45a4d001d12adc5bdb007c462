@@ -1,0 +1,5 @@
+package com.skslate.config;
+
+public class DBConfig {
+
+}

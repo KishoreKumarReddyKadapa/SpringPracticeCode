@@ -1,0 +1,8 @@
+com\skslate\config\LCAppInitializer.class
+com\skslate\dto\RegisterUserDto.class
+com\skslate\dto\UserInfoDto.class
+com\skslate\config\LCAppConfig.class
+com\skslate\controller\LoveCalculatorController.class
+com\skslate\customValidations\Age.class
+com\skslate\dto\LoveCalInterface.class
+com\skslate\customValidations\AgeValidator.class

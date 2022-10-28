@@ -3,6 +3,7 @@
 	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-1.8"/>
 	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\kisho\Downloads\spring-5.2.9.RELEASE-dist\spring-framework-5.2.9.RELEASE\libs"/>
+	<item key="UserLibraryLoadSaveDialog.size" value="800,850"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -76,7 +77,7 @@
 		<item key="create_package_info_java" value="false"/>
 	</section>
 	<section name="ClasspathContainerSelectionPage">
-		<item key="index" value="8"/>
+		<item key="index" value="3"/>
 	</section>
 	<section name="RefactoringWizard.preview">
 		<item key="width" value="600"/>
@@ -100,6 +101,34 @@
 			<item key="DIALOG_X_ORIGIN" value="11"/>
 			<item key="DIALOG_Y_ORIGIN" value="11"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="DialogBounds_SuperInterfaceSelectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="142"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="591"/>
+		<item key="DIALOG_HEIGHT" value="814"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH" value="600"/>
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT" value="462"/>
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
+	</section>
+	<section name="NewAnnotationWizardPage">
+		<item key="add_documented" value="true"/>
+		<section name="AddRetention">
+			<item key="enabled" value="true"/>
+			<list key="selectedEnums">
+				<item value="RUNTIME"/>
+			</list>
+		</section>
+		<section name="AddTarget">
+			<item key="enabled" value="true"/>
+			<list key="selectedEnums">
+				<item value="FIELD"/>
+			</list>
 		</section>
 	</section>
 </section>

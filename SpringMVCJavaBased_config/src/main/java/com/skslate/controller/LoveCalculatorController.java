@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
@@ -16,6 +17,11 @@ import com.skslate.dto.UserInfoDto;
 @Controller
 public class LoveCalculatorController {
 
+	@Autowired
+	LoveCalculatorService loveCalculatorService;
+	
+	
+	
 //	@RequestMapping(value="/",method=RequestMethod.GET)
 	@RequestMapping("/")  
 	public String welcomePage(@ModelAttribute UserInfoDto userInfoDto) { 
@@ -42,12 +48,14 @@ public class LoveCalculatorController {
 	
 	@RequestMapping("/regPage")  
 	public String regPage(@ModelAttribute("regUser") RegisterUserDto registerUserDto) { 
-	return "RegistrationPage";	
+		
+		return "RegistrationPage";
 	}
 	
 	@RequestMapping("/registerUser")
 	public String registerUser(@Valid @ModelAttribute("regUser") RegisterUserDto registerUserDto, BindingResult result) {
 	//DTO -- > Data transfer Object
+		loveCalculatorService.saveRegPeople();
 		
 		if(result.hasErrors()) {
 			System.out.println("My Form has errors********************");
@@ -59,8 +67,25 @@ public class LoveCalculatorController {
 			return "RegistrationPage";
 		}
 		
+		//saving
 		
 		return "LoginPage";
+	}
+	
+//	@ExceptionHandler(NullPointerException.class)
+//	public String nullPointerExceptionHandler(Model model) {
+//		
+//		model.addAttribute("message","Null Pointer Exception...please contact admin");
+//		model.addAttribute("exception", "Null Pointer Exception");
+//		
+//		return "NullPointerException";
+//		
+//	}
+	
+	@RequestMapping("/loveCalc")  
+	public String loveCalc() { 
+		
+		throw new NullPointerException();
 	}
 	
 }
